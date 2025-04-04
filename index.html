@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netfilx</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-linear-to-b from-purple-700 to-indigo-500">
+    <!-- Header -->
+    <header
+      class="bg-indigo-600 font-bold text-[16px] text-white sticky top-0 px-2 md:px-10 shadow-2xl py-1.5 z-10"
+    >
+      <div class="flex justify-between items-center">
+        <h5><a href="#" class="p-1">Kamran</a></h5>
+        <!-- Toggle Switch -->
+        <div
+          class="border-0 rounded-full bg-indigo-700 flex items-center justify-center md:min-w-[100px] sm:w-[75px] w-[60px]"
+        >
+          <button
+            class="border-2 rounded-l-full border-r-0 flex items-center justify-center w-[50%]"
+          >
+            <i class="bx bx-sun p-1"></i>
+          </button>
+          <button
+            class="border-2 rounded-r-full w-[50%] flex items-center justify-center p-1"
+          >
+            <i class="bx bxs-moon"></i>
+          </button>
+        </div>
+        <nav class="[&>*]:p-1 hidden md:flex space-x-4">
+          <a href="#about">About</a>
+          <a href="#projects">Project</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="md:hidden p-1 text-white">
+          <a class="flex items-center justify-center text-white" href=""
+            ><i class="bx bx-menu"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+    <!-- Home/Hero Section -->
+    <section
+      class="h-screen flex-justify_items-center gap-4 flex-col bg-linear-to-b from-indigo-500 to-purple-600 text-white px-9"
+      id="intro"
+    >
+      <img
+        src="images/Kamran.jpg"
+        class="w-50 border-8 rounded-full duration-300 hover:scale-110 hover:border-purple-600 transition-all"
+        alt="My-Img"
+      />
+      <h1 class="text-3xl font-bold sm:text-5xl md:text-6xl animate-pulse">
+        Hi, I am Kamran
+      </h1>
+      <p class="text-[18px] sm:text-3xl md:text-4xl text-center">
+        Web Developer | UI/UX Enthusiast
+      </p>
+      <p class="text-[14px] text-center sm:text-[16px] md:text-[18px]">
+        Passionate about creating clean, efficient, and user-friendly web
+        experiences. I thrive on turning ideas into reality through code and
+        design.
+      </p>
+      <button
+        class="bg-white text-indigo-600 p-2 border-0 rounded-full hover:bg-purple-500 hover:text-white transition-all duration-600"
+      >
+        Download Resume
+      </button>
+      <ul
+        class="absolute bottom-2 mx-auto [&>*]:text-3xl [&>*]:border-4 flex-justify_items-center [&>*]:rounded-full space-x-4"
+      >
+        <li>
+          <a
+            href="https://www.linkedin.com/in/flex-justify_items-center-zia-5879831b4/"
+            target="_blank"
+            class="flex-justify_items-center w-11 h-11 drop-shadow-2xl"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/kamran_4560/#"
+            target="_blank"
+            class="flex-justify_items-center w-11 h-11 drop-shadow-2xl"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://discord.gg/35VuUcWf"
+            target="_blank"
+            class="flex-justify_items-center w-11 h-11 drop-shadow-2xl"
+          >
+            <i class="bx bxl-discord-alt"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://wa.me/qr/OCW6KFZDIBYOD1"
+            target="_blank"
+            class="flex-justify_items-center w-11 h-11 drop-shadow-2xl"
+          >
+            <i class="bx bxl-whatsapp"></i
+          ></a>
+        </li>
+      </ul>
+    </section>
+    <!-- About Section -->
+    <section
+      id="about"
+      class="mx-auto container bg-white min-h-auto py-20 text-center flex-justify_items-center flex-col gap-5 px-4 flex-wrap mb-0"
+    >
+      <h2 class="font-bold text-3xl">About Me</h2>
+      <div
+        class="flex flex-col px-5 sm:px-7 md:flex-row md:px-20 flex-justify_items-center gap-5 sm:text-[18px] md:[22px]"
+      >
+        <img
+          src="images/Kamran.jpg"
+          class="border-4 rounded-full border-violet-600 transition-all hover:scale-110 duration-500"
+          alt=""
+        />
+        <p class="max-w-[650px]">
+          I'm a passionate web developer with a strong focus on creating
+          user-friendly and efficient web applications. With expertise in HTML,
+          CSS, and Tailwind CSS, I strive to deliver clean, responsive, and
+          visually appealing designs. I'm always eager to learn new technologies
+          and contribute to innovative projects.
+        </p>
+      </div>
+      <a
+        href="#"
+        class="border-2 border-blue-400 rounded-full p-2 max-w-35 bg-blue-400 hover:bg-blue-600 text-white hover:scale-125 transition-all"
+      >
+        Read More...
+      </a>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="border-purple-500 mt-0">
+      <div class="mx-auto px-4 flex flex-col gap-3 bg-white p-10 container">
+        <h2 class="text-3xl font-bold text-center mb-12">My Skills</h2>
+        <div
+          id="skill_chart"
+          class="grid md:grid-cols-2 grid-cols-1 gap-5 md:text-[20px] px-6 [&>*]:border-blue-500 [&>*]:max-w-[550px]"
+        >
+          <div
+            id="skill1"
+            class="flex flex-col flex-justify_items-center gap-3 font-semibold border-4 rounded-full p-2"
+          >
+            <h5 class="text-orange-400">Html</h5>
+            <div
+              class="bar w-3/4 h-8 border-0 rounded-full bg-purple-200 md:max-w-11/12"
+            >
+              <div
+                class="prog w-4/5 h-[100%] bg-indigo-500 transition-all border-0 rounded-l-full hover:scale-y-105 text-center flex flex-justify_items-center"
+              >
+                80%
+              </div>
+            </div>
+          </div>
+          <div
+            id="skill2"
+            class="flex-col flex flex-justify_items-center gap-3 font-semibold rounded-full border-4 p-2"
+          >
+            <h5 class="text-orange-400">Css</h5>
+            <div class="bar w-3/4 h-8 border-0 rounded-full bg-purple-200">
+              <div
+                class="prog w-3/4 h-[100%] flex flex-justify_items-center border-0 rounded-l-full bg-indigo-500 transition-all hover:scale-y-105 text-center"
+              >
+                75%
+              </div>
+            </div>
+          </div>
+          <div
+            id="skill3"
+            class="flex flex-col flex-justify_items-center gap-3 font-semibold rounded-full border-4 p-2"
+          >
+            <h5 class="text-orange-400">Tailwind</h5>
+            <div class="bar min-w-3/4 h-8 border-0 rounded-full bg-purple-200">
+              <div
+                class="prog w-3/5 h-[100%] flex flex-justify_items-center border-0 rounded-l-full bg-indigo-500 transition-all hover:scale-y-105 text-center"
+              >
+                60%
+              </div>
+            </div>
+          </div>
+          <div
+            id="skill4"
+            class="flex flex-col flex-justify_items-center gap-3 font-semibold rounded-full border-4 p-2"
+          >
+            <h5 class="text-orange-400">JavaScript</h5>
+            <div
+              class="bar w-3/4 h-8 bg-purple-200 border-0 rounded-full flex-justify_items-center"
+            >
+              0%
+              <!-- <div
+                class="prog w-3/4 h-[100%] flex flex-justify_items-center border-0 rounded-l-full bg-indigo-500 transition-all hover:scale-y-105 text-center"
+              >
+                75%
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Certifications -->
+    <section class="container mx-auto bg-white p-5 md:p-20">
+      <h2 class="text-4xl font-bold my-6 text-center">Certifications</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold mb-2">
+            Certified Frontend Web Developer
+          </h3>
+          <p class="text-gray-700 mb-4">
+            Awarded by Internshala Trainings for completing a comprehensive
+            frontend web development course covering HTML, CSS, and Tailwind.
+          </p>
+          <a
+            href="#"
+            target="_blank"
+            class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded inline-block"
+            >View Certificate</a
+          >
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold mb-2">
+            Cloud Computing Practitioner
+          </h3>
+          <p class="text-gray-700 mb-4">
+            Certified in cloud computing fundamentals and deployment strategies
+            from Internshala Trainings.
+          </p>
+          <a
+            href="path/to/cloud-certificate.pdf"
+            target="_blank"
+            class="bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded inline-block"
+            >View Certificate</a
+          >
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold mb-2">Data Science Essentials</h3>
+          <p class="text-gray-700 mb-4">
+            Completed a course on data analysis, visualization, and machine
+            learning basics from Internshala Trainings.
+          </p>
+          <a
+            href="path/to/data-science-certificate.pdf"
+            target="_blank"
+            class="bg-purple-500 hover:bg-purple-700 text-white py-2 px-4 rounded inline-block"
+            >View Certificate</a
+          >
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold mb-2">
+            Project Management Professional
+          </h3>
+          <p class="text-gray-700 mb-4">
+            Certified in project management methodologies and best practices
+            through Internshala Trainings.
+          </p>
+          <a
+            href="path/to/project-management-certificate.pdf"
+            target="_blank"
+            class="bg-orange-500 hover:bg-orange-700 text-white py-2 px-4 rounded inline-block"
+            >View Certificate</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects" class="container mx-auto p-5 bg-white">
+      <h2 class="text-3xl font-semibold mb-6 text-center">My Projects</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="project-card bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold mb-2">E-commerce Website</h3>
+          <p class="text-gray-700 mb-4">
+            Developed a fully functional e-commerce platform with user
+            authentication, product listings, and a shopping cart.
+          </p>
+          <a
+            href="#"
+            class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded inline-block"
+            >View Project</a
+          >
+        </div>
+
+        <div class="project-card bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold mb-2">Weather App</h3>
+          <p class="text-gray-700 mb-4">
+            Created a responsive weather application that fetches real-time
+            weather data from an API.
+          </p>
+          <a
+            href="#"
+            class="bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded inline-block"
+            >View Project</a
+          >
+        </div>
+
+        <div class="project-card bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+          <p class="text-gray-700 mb-4">
+            Designed and built a personal portfolio website to showcase skills
+            and projects.
+          </p>
+          <a
+            href="#"
+            class="bg-purple-500 hover:bg-purple-700 text-white py-2 px-4 rounded inline-block"
+            >View Project</a
+          >
+        </div>
+
+        <div class="project-card bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold mb-2">Task Management App</h3>
+          <p class="text-gray-700 mb-4">
+            Developed a task management application for organizing and tracking
+            daily tasks with user accounts.
+          </p>
+          <a
+            href="#"
+            class="bg-orange-500 hover:bg-orange-700 text-white py-2 px-4 rounded inline-block"
+            >View Project</a
+          >
+        </div>
+
+        <div class="project-card bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold mb-2">Blog Website</h3>
+          <p class="text-gray-700 mb-4">
+            Created a blog website with user authentication, post creation, and
+            comment functionality.
+          </p>
+          <a
+            href="#"
+            class="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded inline-block"
+            >View Project</a
+          >
+        </div>
+
+        <div class="project-card bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-semibold mb-2">Image Gallery</h3>
+          <p class="text-gray-700 mb-4">
+            Developed an image gallery application with responsive design and
+            image filtering capabilities.
+          </p>
+          <a
+            href="#"
+            class="bg-teal-500 hover:bg-teal-700 text-white py-2 px-4 rounded inline-block"
+            >View Project</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="container mx-auto p-5 bg-white">
+      <h2 class="text-3xl font-semibold mb-6 text-center">Contact Me</h2>
+
+      <div class="max-w-md mx-auto bg-white rounded-lg shadow-md p-6">
+        <form class="">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700 text-sm font-bold mb-2 selection:border-amber-700"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full border rounded-lg py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline "
+              
+              placeholder="Your Name"
+            />
+          </div>
+
+          <div class="mb-4">
+            <label
+              for="email"
+              class="block text-gray-700 text-sm font-bold mb-2"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full border rounded-lg py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              placeholder="Your Email"
+            />
+          </div>
+
+          <div class="mb-6">
+            <label
+              for="message"
+              class="block text-gray-700 text-sm font-bold mb-2"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="w-full border rounded-lg py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+
+          <div class="text-center transition-all">
+            <button
+              type="submit"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto text-center">
+        <div class="flex justify-center space-x-4 mb-4">
+          <a
+            href=""
+            class="bg-blue-500 hover:bg-blue-600 py-2 px-4 rounded-full transition duration-300 ease-in-out"
+            >Call</a
+          >
+          <a
+            href=""
+            class="bg-green-500 hover:bg-green-600 py-2 px-4 rounded-full transition duration-300 ease-in-out"
+            >Email</a
+          >
+        </div>
+        <p class="">&copy; 2024 My Website. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- Top_Button -->
+    <a href="#intro">
+      <button
+        class="top_btn w-10 h-10 bg-white border rounded-full z-10 fixed bottom-4 right-4 flex-justify_items-center border-purple-200 hover:animate-pulse"
+      >
+        <i class="bx bx-up-arrow-alt font-bold text-3xl"></i>
+      </button>
+    </a>
+  </body>
+</html>

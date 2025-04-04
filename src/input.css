@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.flex-justify_items-center{
+    @apply flex items-center justify-center;
+}
